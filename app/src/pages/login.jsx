@@ -23,9 +23,43 @@ const Login = () => {
     }
 
     return (
-        <>
-            <h1>Welcome to the Login Page!</h1>
-        </>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <p>MARKSY!</p>
+                    </div>
+                    <h1>Welcome Back!</h1>
+                    <p>Please enter your credentials to access the portal.</p>
+                </div>
+                <form onSubmit={handleLogin}>
+                    {/* Email Input Field */}
+                    <div>
+                        <input 
+                            type="email"
+                            placeholder="Email Address"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                        >
+                        </input>
+                    </div>
+                    {/* Password Input Field */}
+                    <div>
+                        <input 
+                            type="password"
+                            placeholder="Password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        >
+                        </input>
+                    </div>
+                    {/* Login Button */}
+                    <button type="submit">
+                        Access Portal!
+                    </button>
+                </form>
+            </div>
+        </div>
     )
 }
 
