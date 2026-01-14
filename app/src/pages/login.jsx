@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
+import supabase from '../config/supabase_client';
 
 const Login = () => {
+    console.log(supabase);
 
     const navigate = useNavigate();
 
