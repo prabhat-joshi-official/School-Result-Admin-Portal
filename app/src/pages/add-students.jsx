@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import supabase from '../config/supabase_client';
 
-const AdminDashboard = () => {
+const AddStudents = () => {
     return (
         <div>
             {/* Header Element */}
@@ -16,9 +16,10 @@ const AdminDashboard = () => {
                 </ul>
             </header>
             
-            {/* Dashboard Content */}
+            {/* Add Students Content */}
+            
         </div>
     );
 }
 
-export default AdminDashboard;
+export default AddStudents;
